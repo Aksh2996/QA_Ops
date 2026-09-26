@@ -1,5 +1,5 @@
 const {test,expect}=require('playwright/test');
-test.only('first playwright testt',async({browser})=>
+test('first playwright testt',async({browser})=>
 {
 const context=await browser.newContext()
 const page=await context.newPage()

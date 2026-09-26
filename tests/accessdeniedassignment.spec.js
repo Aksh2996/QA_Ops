@@ -20,7 +20,6 @@ test('access_denied', async ({ browser }) => {
     console.log(await apiresponse.status())
     const token = apijson.token
     console.log(token)
-
     //page
     const context = await browser.newContext()
     const page = await context.newPage()
@@ -91,10 +90,4 @@ await page2.locator("#nav-bookings").click();
 await page2.getByRole("button", { name: "View Details" }).click();
 await expect(page2.getByText("Access Denied")).toBeVisible()
 await expect(page2.getByText("You are not authorized to view this booking.")).toBeVisible()
-
-
-
-
-
-
 })

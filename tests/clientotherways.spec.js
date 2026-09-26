@@ -7,7 +7,7 @@ await page.goto("https://rahulshettyacademy.com/client/#/auth/login")
 await page.getByPlaceholder("email@example.com").fill("aprakash270@gmail.com")
 await page.getByPlaceholder("enter your passsword").fill("Vihaan@1234")
 await page.getByRole("button",{name:"Login"}).click()
-await page.locator(".cardvghui0-pol--body").filter({hasText:'ZARA COAT 3'}).getByRole("button",{name:'Add To Cart'}).click()gt /nnnnnnnnnnn
+await page.locator(".cardvghui0-pol--body").filter({hasText:'ZARA COAT 3'}).getByRole("button",{name:'Add To Cart'}).click()
 await page.getByRole("listitem").getByRole("button",{name:'Cart'}).click()
 await page.getByRole("button",{name:'Checkout'}).click()
 await page.getByPlaceholder("Select Country").type("Ind")

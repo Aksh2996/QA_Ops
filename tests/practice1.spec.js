@@ -5,6 +5,5 @@ test('practise1',async({browser})=>
     const page=await constext.newpage()
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/")
     await page.pause()
-    await page.
 }
 )

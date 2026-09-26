@@ -25,7 +25,7 @@ test("screenshot",async({page})=>{
     await page.screenshot({path:'screenshot.png'})
 })
 
-test.only("matchscreenshot",async({page})=>{
+test("matchscreenshot",async({page})=>{
     await page.goto("https://www.google.com/")
     expect(await page.screenshot()).toMatchSnapshot('a.png')
 })
